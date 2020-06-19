@@ -1,0 +1,5 @@
+times = ('Athletico-PR', 'Atlético-GO', 'Atlético-MG', 'Bahia', 'Botafogo', 'Bragantino', 'Ceará', 'Corinthians', 'Coritiba', 'Flamengo', 'Fluminense', 'Fortaleza', 'Goiás', 'Grêmio', 'Internacional', 'Palmeiras', 'Santos', 'São Paulo', 'Sport', 'Vasco')
+print(f'Os cinco primeiros colocados são: {times[:5]}')
+print(f'Os quatro últimos colocados são: {times[16:]}')
+print(f'Os times do campeonato são: {sorted(times)}')
+print(f'O Corinthians está na {times.index("Corinthians")+1}° posição.')
