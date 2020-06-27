@@ -22,4 +22,4 @@ for age in compilado:
     if age['idade'] >= midade/cadn:
         print(f'd) Essas são as pessoas com idade acima da média: {age}')
 # print(dados)
-# print(compilado)    
+# print(compilado)
