@@ -2,7 +2,7 @@ pessoas = {}
 def cadastrop(nome, idade):    
     okn = oki = False
     while not okn:
-        nome = input('Digite o nome: ').strip().capitalize()                
+        nome = input('Digite o nome: ').strip().title()                
         if nome.strip() == '':
             print('Nome não informado')            
         else:
@@ -18,7 +18,8 @@ def cadastrop(nome, idade):
     pessoas['Idade'] = idade
     print('Dados cadastrados com sucesso')
     with open('cadastrodb.txt', 'a') as cad:
-        cad.write(f'{nome} {idade}\n')
+        # cad.write(f'\'{nome}\' \'{idade}\'\n')
+        cad.write(f'{nome};{idade}\n')
 
 
 # cadastro('allan',37)
